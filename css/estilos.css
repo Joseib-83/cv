@@ -1,0 +1,218 @@
+@import url('https://fonts.cdnfonts.com/css/roboto');
+body{ 
+    font-family: 'Roboto', Sans Serif;
+    color:#fff;
+     }
+h1{ font-size:2em;}
+h2,h3{
+    text-transform: uppercase;
+    
+}
+a{
+    color:#000;
+    text-decoration:none;
+
+}
+a:hover{
+   background-color: #ccc; 
+   border-radius: 8px;
+}
+#navbar{
+    background-color:#fff;
+    position: relative;
+    left: 0;
+    top: 0;
+    display: block;
+    width: 100%;
+    overflow: hidden;
+    z-index: 50;
+
+}
+#navbar ul{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    
+    
+}
+.lista-small{
+    display:block;
+}
+.myicono{
+    color:#000;
+    font-size:1.5em;
+    display: none;
+}
+
+#navbar li{
+    float:left;
+    padding: 0px 5px;
+    font-size: 1.3em;
+    
+}
+#navbar li.active a{
+    color:chartreuse;
+}
+#navbar li a{
+    padding: 0px 5px;
+    display:inline-block;
+    font-size: 18px;
+    text-align:center;
+    color:#000;
+}
+
+#content{  
+    max-width:1120px;
+    margin: 0 auto;
+    background-color: #ccc;
+}
+img{
+    border-radius: 50%;
+}
+#principal{
+    
+    width:35%;
+    float:left;
+    padding: 3px;
+    background-color: #15b;
+      
+}
+#principal p,h2,h3{
+    text-align: center;
+}
+#secundario{
+    
+    width:60%;
+    padding:0 10px;
+    float:left;
+} 
+#clear{
+    clear:both;
+}
+#content main{
+    margin-bottom: 15px;;
+    width:100%;
+}
+#datos-personales{
+    margin-top:5px;
+}
+#bloque-1{
+    float: left;
+    padding: 0 10px;
+    width: 30%;
+    box-sizing: border-box;
+}
+#bloque-2{
+    float: left;
+    padding: 0 10px;
+    width: 70%;
+    box-sizing: border-box;
+    border-style: solid;
+    border-color: #ccc #ccc #ccc  black;
+}
+#experiencia h2{
+    background-color: blueviolet;
+    color:#fff;
+    box-shadow: 5px 10px;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 5px;
+}
+#habilidades h2{
+    background-color: blueviolet;
+    color:#fff;
+    box-shadow: 5px 10px;
+    width: fit-content;
+    text-transform: uppercase;
+    padding: 5px;
+}
+#habilidades ul li{
+    padding:5px 0px;
+    
+}
+#habi{
+    display:none;
+}
+footer {
+    width: 100%;
+    padding:0;
+}
+
+footer{
+    clear:both;
+    width: 100%;
+    background-color: #15b;
+    height:100px;
+    padding:25px;
+}
+@media screen and (max-width:850px){
+    #content{
+        padding: 0;
+        max-width: 100%;
+    }
+    #content header{
+        padding: 0;
+        border-radius: 0;
+    }
+    #principal{
+        width:45%;
+    }
+    #secundario{
+        width:45%;
+       
+    }
+    #bloque-1{
+        float: none;
+        padding: 0 10px;
+        width: 100%;
+        box-sizing: border-box;
+    }
+    #bloque-2{
+        float: none;
+        padding: 0 0px;
+        width: 100%;
+        box-sizing: border-box;
+        border-style: solid;
+        border-color: #ccc;
+    }
+   
+}
+@media screen and (max-width:600px){
+    .lista-small{
+        display:none;
+    }
+    #navbar li{
+        float:none;
+        display:block;
+        
+    }
+    #navbar li a{
+        width: 100%;
+        padding: 5px;
+        
+    }
+    .myicono{
+        display:block;
+        text-align:right;
+        padding: 5px;
+
+    }
+    #content{
+        width:auto;
+        margin: 0;
+    }
+   
+    #principal{
+        width:auto;
+        margin: 0;
+    }
+    #secundario{
+        width:auto;
+        margin: 0;
+    }
+
+    #content footer{
+        width: auto;
+        padding:0;
+    }
+}
