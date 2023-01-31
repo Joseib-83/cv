@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV</title>
+    
+    
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/940b2eb674.js" crossorigin="anonymous"></script>
+</head>
+<body>
+   
+    <header>
+        <nav id="navbar">
+            <div class="myicono"><i class="fas fa-bars"></i></div>
+            <ul class="lista-small">
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="#datos-personales">Datos personales</a></li>
+                <li><a href="#perfil">Perfil</a></li>
+                <li><a href="#experiencia">Experiencia</a></li>
+                <li><a href="#educacion">Educacion</a></li>
+                <li><a href="#habilidades">Habilidades</a></li>
+            </ul>
+           
+        </nav>
+   </header>
+    <div id="content">
+  
+   <main>
+       <section id="principal"><h2 id="perfil">Perfil</h2>
+        <p> <img src="/imagen/persona.png"  alt=""></p>
+        <h3>Idiomas</h3>
+        <p><strong>Español</strong> Nativo</p>
+        <p><strong>Ingles</strong> Intermedio</p>
+        <div id="educacion">
+        <h2>Educacion</h2>
+        
+        <p>2001-2007 Licenciatura en sistemas de informacion -Lujan</p>
+        <p>1995-2000 Escuela secundaria N3-Mercedes</p>
+        </div>       
+        
+        
+        </section>
+      <section id="secundario">
+     
+     <div id="datos-personales">
+        <div id="bloque-1">
+        <h2>Belen Palacios</h2>
+        <h3>Programadora</h3>
+
+        </div>
+        
+        <div id="bloque-2">
+        <p><i class="fa fa-phone" aria-hidden="true"></i> +54 9 11 3322-3322</p>
+        <p><i class="fa fa-envelope" aria-hidden="true"></i> Email: email@gmail.com </p>
+        <p><i class="fa fa-home" aria-hidden="true"></i> Direccion: Juan Jose Paso 631-Mercedes</p>
+        </div>
+        <div id="clear"></div>
+       </div>
+       <div id="experiencia">
+        <h2>Experiencia Laboral</h2>
+        <p><strong>2020-actualidad</strong></p>
+        <p><strong>univercidad de Lujan</strong> | mantemimiento de base datos</p>
+        <p><strong>2016-2019</strong></p>
+        <p><strong>Hierros Mercedes</strong> | control de inventario</p>
+        <p><strong>2009-2015</strong></p>
+        <p><strong>Libreria Laura</strong> | Atencion al cliente</p>
+         
+       </div>
+       <div id="habilidades">
+       <h2>Habilidades</h2>
+       <ul id="habi">
+        <li>Proactiva</li>
+        <li>Responsable</li>
+        <li>Autodidacta</li>
+        <li>Capacidad de liderazgo y trabajo en equipo</li>
+       </ul>
+       <p>Aprete boton para ver habilidades</p>
+       <input type="submit" value="click" onclick="mostrarDatos()"/>
+       </div>
+      </section>
+     <div id="clear"></div>
+   </main>
+   </div>
+
+   <footer>
+    <p align="center">Copyright</p> 
+ </footer>
+   
+  
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   
+      
+   </script>
+   <script>
+   function mostrarDatos(){
+		document.getElementById("habi").style.display = "block";
+	}
+    $('.myicono').click(function(e){
+       
+       $('#navbar ul').toggleClass('lista-small');
+     })
+   </script>
+</body>
+</html>
